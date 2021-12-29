@@ -1,8 +1,103 @@
 @import url(https://oofabyy.github.io/steamcss/steam.css);
-/*Font*/
-/*Neu thich thi xoa cai nay di
-@font-face {
-	font-family: ;
-	src: url();
+/*Loading Screen : may drop fps
+#initLoader {
+  background-image: url(https://cdn.discordapp.com/attachments/925735566727868476/925740040108261487/ezgif.com-gif-maker_4.gif);
+  background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
 }
-*/
+#lC-cont, #loadGamNm, #loadInfoLHolder, #loadEditrBtn {
+    display: none ;
+}
+#loadTipsHolder {
+    content: url(https://media.discordapp.net/attachments/925735566727868476/925736432264445982/ezgif.com-gif-maker_1.png?width=1440&height=347);
+    display: block !important;    
+}
+#loadTipsHolder::after {
+    content:url(https://cdn.discordapp.com/attachments/925735566727868476/925736432461557780/ezgif.com-gif-maker.png) !important;
+    display: inline-block !important;
+}
+#loadingOverlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #101010;
+  z-index: 9999999;
+  transition: opacity 0.5s;
+}
+
+#gameLogoLd {
+  font-size: 22px;
+  position: absolute;
+  width: 100%;
+  height: 170px;
+  text-align: center;
+  margin: auto;
+  top: 50px;
+  background-image: url("https://krunker.io/img/logo_1.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+#loadingCenter {
+  width: 100%;
+  text-align: center;
+  font-size: 30px;
+  color: white;
+  position: absolute;
+  top: 40%;
+  transition: opacity 0.3s;
+}
+
+#loadingCircle {
+  width: fit-content;
+  text-align: center;
+  margin: auto;
+}
+
+#loadingMsgLd {
+  font-size: 22px;
+  color: rgba(255, 255, 255, 0.6);
+  margin-right: 10px;
+}
+
+#steamLogoLd {
+  position: absolute;
+  width: 100%;
+  height: 40px;
+  text-align: center;
+  margin: auto;
+  bottom: 100px;
+  background-image: url("https://media.discordapp.net/attachments/925735566727868476/925736432264445982/ezgif.com-gif-maker_1.png?width=1440&height=347");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  transform: translateX(-100px);
+}
+
+#yendisLogoLd {
+  position: absolute;
+  width: 100%;
+  height: 40px;
+  text-align: center;
+  margin: auto;
+  bottom: 100px;
+  background-image: url("https://media.discordapp.net/attachments/925735566727868476/925736432461557780/ezgif.com-gif-maker.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  transform: translateX(100px);
+}
+
+#yendisCopyrightLd {
+  font-size: 12px;
+  color: rgba(255, 255, 255, 0.6);
+  position: absolute;
+  width: 100%;
+  text-align: center;
+  margin: auto;
+  bottom: 50px;
+}*/
